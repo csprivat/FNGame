@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Sites Educativos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <script>
+    function toggleMenu() {
+        var x = document.getElementById("topnav");
+        if (x.className === "") {
+            x.className += "responsive";
+        } else {
+            x.className = "";
+        }
+    }
+    </script>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="justificativa.html">Justificativa</a>
-        <a href="panelas-digitais.html">Panelas Digitais</a>
-        <a href="sites-educativos.html">Sites Educativos</a>
-    </nav>
-    <h1>Sites Educativos</h1>
+
+<nav id="topnav">
+    <a href="index.html">Início</a>
+    <a href="justificativa.html">Justificativa</a>
+    <a href="panelas-digitais.html">Panelas Digitais</a>
+    <a href="sites-educativos.html">Sites Educativos</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+</nav>
+
+<div class="container">
+<h1>Sites Educativos</h1>
 
 <h1>🌐 Sites brasileiros que educam sobre fake news e uso consciente da internet</h1>
 
@@ -83,6 +98,12 @@
 <blockquote>
   <p><strong>Aplicação imediata:</strong> Acesse planos de aula prontos e adaptáveis ao seu contexto escolar.</p>
 </blockquote>
+
+</div>
+
+<footer>
+    <p>Site licenciado sob AGPLv3. Este projeto adota a filosofia <strong>Copyleft</strong>.</p>
+</footer>
 
 </body>
 </html>
