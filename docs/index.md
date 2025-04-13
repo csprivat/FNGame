@@ -4,6 +4,6 @@ Este é o site oficial do projeto **AFNGame**, uma iniciativa para combater a de
 
 ## Seções do site
 
-- [Justificativa](justificativa.html)
-- [Panelas Digitais](panelas-digitais.html)
-- [Sites Educativos](sites-educativos.html)
+- [Justificativa](justificativa.md)
+- [Panelas Digitais](panelas-digitais.md)
+- [Sites Educativos](sites-educativos.md)
