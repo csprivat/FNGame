@@ -1,8 +1,3 @@
-<div style="text-align: center; padding: 1rem; background-color: #007ACC; color: white;">
-<h1 style="margin: 0;">AFNGame</h1>
-<p style="margin: 0;">Projeto educativo contra a desinformação</p>
-</div>
-<br />
 # Panelas Digitais
 
 # O perigo das “panelas digitais” e a urgência de educar para o pertencimento saudável
@@ -18,8 +13,3 @@ Esses episódios escancaram uma necessidade urgente para nós, educadores(as): *
 Mais do que “alertar”, precisamos **escutar, orientar e construir vínculos de confiança** com os jovens. Quando a escola se fecha para o que acontece online, ela perde a chance de ser rede de apoio. Mas quando assume seu papel de educadora digital, torna-se espaço de transformação, prevenção e cuidado.
 
 Iniciativas como o **AFNGame** surgem justamente para apoiar esse processo, oferecendo uma abordagem pedagógica, interativa e segura para tratar desses temas difíceis com responsabilidade e acolhimento.
-<br />
-<hr />
-<footer style="text-align: center; font-size: 0.9rem; color: #555;">
-<p>Site licenciado sob AGPLv3. Este projeto adota a filosofia <strong>Copyleft</strong>.</p>
-</footer>
