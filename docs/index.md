@@ -1,3 +1,8 @@
+<div style="text-align: center; padding: 1rem; background-color: #007ACC; color: white;">
+<h1 style="margin: 0;">AFNGame</h1>
+<p style="margin: 0;">Projeto educativo contra a desinformação</p>
+</div>
+<br />
 # Bem-vindo ao AFNGame
 
 Este é o site oficial do projeto **AFNGame**, uma iniciativa para combater a desinformação e promover o uso responsável das redes sociais entre jovens e adolescentes.
@@ -7,3 +12,8 @@ Este é o site oficial do projeto **AFNGame**, uma iniciativa para combater a de
 - [Justificativa](justificativa.md)
 - [Panelas Digitais](panelas-digitais.md)
 - [Sites Educativos](sites-educativos.md)
+<br />
+<hr />
+<footer style="text-align: center; font-size: 0.9rem; color: #555;">
+<p>Site licenciado sob AGPLv3. Este projeto adota a filosofia <strong>Copyleft</strong>.</p>
+</footer>

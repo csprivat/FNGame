@@ -1,3 +1,8 @@
+<div style="text-align: center; padding: 1rem; background-color: #007ACC; color: white;">
+<h1 style="margin: 0;">AFNGame</h1>
+<p style="margin: 0;">Projeto educativo contra a desinformação</p>
+</div>
+<br />
 # Justificativa
 
 # Por que uma plataforma como o AFNGame é urgente e necessária?
@@ -20,3 +25,8 @@ Tais competências evidenciam a **necessidade de ações pedagógicas que integr
 Para nós, educadores e educadoras, a sala de aula precisa ser também um espaço de formação digital. Precisamos falar sobre fake news com a mesma seriedade com que falamos sobre bullying ou violência. Precisamos preparar nossos(as) alunos(as) para identificar, questionar e resistir aos riscos — inclusive os disfarçados — que se escondem nas redes.
 
 Ao investir numa ferramenta como o **AFNGame**, estamos **apostando na prevenção** e **reafirmando o papel da educação como principal aliada na construção de uma internet mais segura, inclusiva e consciente**. E isso começa agora, com cada professor(a), pedagogo(a) e educador(a) que entende que **formar cidadãos críticos também é formar cidadãos digitais**.
+<br />
+<hr />
+<footer style="text-align: center; font-size: 0.9rem; color: #555;">
+<p>Site licenciado sob AGPLv3. Este projeto adota a filosofia <strong>Copyleft</strong>.</p>
+</footer>
