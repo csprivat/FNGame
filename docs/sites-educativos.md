@@ -1,3 +1,8 @@
+<div style="text-align: center; padding: 1rem; background-color: #007ACC; color: white;">
+<h1 style="margin: 0;">AFNGame</h1>
+<p style="margin: 0;">Projeto educativo contra a desinformação</p>
+</div>
+<br />
 # Sites Educativos
 
 # 🌐 Sites brasileiros que educam sobre fake news e uso consciente da internet
@@ -48,3 +53,9 @@ Organização de pesquisa que aborda temas como **liberdade de expressão, fake 
 Portal educacional que oferece conteúdos didáticos e práticas pedagógicas aplicáveis à sala de aula, com seções voltadas ao enfrentamento das fake news.
 
 > **Aplicação imediata:** Acesse planos de aula prontos e adaptáveis ao seu contexto escolar.
+<br />
+<hr />
+<footer style="display: flex; justify-content: space-between; font-size: 0.9rem; color: #555;">
+<div style="text-align: left;">Site licenciado sob AGPLv3. Este projeto adota a filosofia <strong>Copyleft</strong>.</div>
+<div></div>
+</footer>
