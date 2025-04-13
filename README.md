@@ -6,7 +6,7 @@ Projeto educacional interativo que utiliza um bot no Telegram para promover o pe
 
 ## 🚀 Visão Geral
 
-O FNGame é um bot gamificado, criado pelo [Raul Hacker Club](https://raulhc.cc) e pela Universidade Federal da Bahia (UFBA), que apresenta perguntas de múltipla escolha com base em notícias verdadeiras e falsas. O objetivo é estimular a reflexão crítica e fornecer materiais confiáveis para o aprendizado.
+O FNGame é um bot gamificado, que apresenta perguntas de múltipla escolha com base em notícias verdadeiras e falsas. O objetivo é estimular a reflexão crítica e fornecer materiais confiáveis para o aprendizado.
 
 ---
 
@@ -24,6 +24,30 @@ O FNGame é um bot gamificado, criado pelo [Raul Hacker Club](https://raulhc.cc)
 ├── docker-compose.yml      # Orquestração de app + banco
 └── roadmap_anti_fake_news.md # Planejamento do projeto
 ```
+
+---
+
+## 📊 Funcionalidades
+
+- Escolha de temas com `/temas`
+- Perguntas aleatórias via banco MariaDB
+- Pontuação e feedback pedagógico por desempenho
+- Ranking com `/ranking`
+- Comando `/about` para exibir informações
+- Raspador de perguntas: `FNGame_scraper.py`
+
+---
+
+## 🎯 Roadmap (v1.4)
+
+- [x] Integração com banco de dados MariaDB
+- [x] Escolha de temas
+- [x] Pontuação por sessão e ranking
+- [x] Feedback por desempenho com links didáticos
+- [x] Comando `/reiniciar`, `/temas`, `/pontuacao`, `/ranking`
+- [x] Fallback de perguntas offline (JSON – futura versão)
+
+Ver detalhes em [`roadmap_anti_fake_news.md`](./roadmap_anti_fake_news.md)
 
 ---
 
@@ -60,29 +84,17 @@ python check_env.py
 python FNGame-1.4.py
 ```
 
----
+## 📦 Como clonar e executar
 
-## 📊 Funcionalidades
-
-- Escolha de temas com `/temas`
-- Perguntas aleatórias via banco MariaDB
-- Pontuação e feedback pedagógico por desempenho
-- Ranking com `/ranking`
-- Comando `/about` para exibir informações
-- Raspador de perguntas: `FNGame_scraper.py`
-
----
-
-## 🎯 Roadmap (v1.4)
-
-- [x] Integração com banco de dados MariaDB
-- [x] Escolha de temas
-- [x] Pontuação por sessão e ranking
-- [x] Feedback por desempenho com links didáticos
-- [x] Comando `/reiniciar`, `/temas`, `/pontuacao`, `/ranking`
-- [x] Fallback de perguntas offline (JSON – futura versão)
-
-Ver detalhes em [`roadmap_anti_fake_news.md`](./roadmap_anti_fake_news.md)
+```bash
+git clone https://github.com/SEU_USUARIO/FNGame.git
+cd FNGame
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+cp env.example .env
+python FNGame-1.4.py
+```
 
 ---
 
