@@ -14,7 +14,6 @@ Este é o site oficial do projeto **AFNGame**, uma iniciativa para combater a de
 - [Sites Educativos](sites-educativos.md)
 <br />
 <hr />
-<footer style="display: flex; justify-content: space-between; font-size: 0.9rem; color: #555;">
+<footer style="font-size: 0.9rem; color: #555;">
 <div style="text-align: left;">🄯 Site licenciado sob AGPLv3. Este projeto adota a filosofia <strong>Copyleft</strong>.</div>
-<div></div>
 </footer>

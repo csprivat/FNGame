@@ -27,7 +27,6 @@ Para nós, educadores e educadoras, a sala de aula precisa ser também um espaç
 Ao investir numa ferramenta como o **AFNGame**, estamos **apostando na prevenção** e **reafirmando o papel da educação como principal aliada na construção de uma internet mais segura, inclusiva e consciente**. E isso começa agora, com cada professor(a), pedagogo(a) e educador(a) que entende que **formar cidadãos críticos também é formar cidadãos digitais**.
 <br />
 <hr />
-<footer style="display: flex; justify-content: space-between; font-size: 0.9rem; color: #555;">
+<footer style="font-size: 0.9rem; color: #555;">
 <div style="text-align: left;">🄯 Site licenciado sob AGPLv3. Este projeto adota a filosofia <strong>Copyleft</strong>.</div>
-<div></div>
 </footer>

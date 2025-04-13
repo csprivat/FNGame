@@ -55,7 +55,6 @@ Portal educacional que oferece conteúdos didáticos e práticas pedagógicas ap
 > **Aplicação imediata:** Acesse planos de aula prontos e adaptáveis ao seu contexto escolar.
 <br />
 <hr />
-<footer style="display: flex; justify-content: space-between; font-size: 0.9rem; color: #555;">
+<footer style="font-size: 0.9rem; color: #555;">
 <div style="text-align: left;">🄯 Site licenciado sob AGPLv3. Este projeto adota a filosofia <strong>Copyleft</strong>.</div>
-<div></div>
 </footer>

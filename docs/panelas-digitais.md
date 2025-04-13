@@ -20,7 +20,6 @@ Mais do que “alertar”, precisamos **escutar, orientar e construir vínculos 
 Iniciativas como o **AFNGame** surgem justamente para apoiar esse processo, oferecendo uma abordagem pedagógica, interativa e segura para tratar desses temas difíceis com responsabilidade e acolhimento.
 <br />
 <hr />
-<footer style="display: flex; justify-content: space-between; font-size: 0.9rem; color: #555;">
+<footer style="font-size: 0.9rem; color: #555;">
 <div style="text-align: left;">🄯 Site licenciado sob AGPLv3. Este projeto adota a filosofia <strong>Copyleft</strong>.</div>
-<div></div>
 </footer>
