@@ -1,5 +1,0 @@
-baseURL = "https://csprivat.github.io/FNGame/"
-languageCode = "pt-br"
-title = "AFNGame"
-theme = "ananke"
-publishDir = "docs"
