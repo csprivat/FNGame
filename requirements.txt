@@ -1,0 +1,6 @@
+python-dotenv
+PyMySQL
+mysql-connector-python
+beautifulsoup4
+requests
+pyTelegramBotAPI
