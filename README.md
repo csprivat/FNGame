@@ -102,6 +102,20 @@ python FNGame-1.4.py
 
 Este projeto está licenciado sob AGPLv3 – [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html)
 
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+---
+
+## 🤝 Como contribuir
+
+Contribuições são bem-vindas! Leia o [guia de contribuição](CONTRIBUTING.md) para saber como colaborar com o FNGame.
+
+---
+
+## 🌐 Código de Conduta
+
+Para garantir um ambiente acolhedor e respeitoso, seguimos o [Código de Conduta](CODE_OF_CONDUCT.md) baseado no Contributor Covenant.
+
 ---
 
 ## 👥 Autoria
