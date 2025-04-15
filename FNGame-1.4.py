@@ -21,6 +21,20 @@ import telebot
 from dotenv import load_dotenv
 from telebot.types import ReplyKeyboardMarkup, ReplyKeyboardRemove, InlineKeyboardMarkup, InlineKeyboardButton
 from db import get_connection, fetch_questions
+import logging
+from logging.handlers import RotatingFileHandler
+
+# Configuração do log
+log_path = "error.log"
+log_format = "%(asctime)s [%(levelname)s] %(message)s"
+
+logging.basicConfig(
+    handlers=[RotatingFileHandler(log_path, maxBytes=5000000, backupCount=3)],
+    level=logging.INFO,
+    format=log_format,
+    encoding="utf-8"
+)
+
 
 load_dotenv()
 token = os.getenv("TELEGRAM_BOT_TOKEN")
@@ -166,10 +180,10 @@ def salvar_pontuacao_total(chat_id):
         chat = bot.get_chat(chat_id)
         username = chat.username if chat.username else "desconhecido"
     except Exception as e:
-        print(f"❌ Erro ao obter username para chat_id {chat_id}: {e}")
+        logging.warning("Erro ao obter username para chat_id %s: %s", chat_id, e)
         username = "erro_username"
 
-    print(f"📥 Salvando pontuação: chat_id={chat_id}, username={username}, score={score}")
+    logging.info("Salvando pontuação: chat_id=%s, username=%s, score=%s", chat_id, username, score)
 
     try:
         with get_connection() as conn:
@@ -182,17 +196,18 @@ def salvar_pontuacao_total(chat_id):
                         "UPDATE user_scores SET score = score + %s, last_played = NOW() WHERE telegram_user_id = %s",
                         (score, chat_id)
                     )
-                    print("🔁 Score atualizado com sucesso.")
+                    logging.info("Score atualizado com sucesso para chat_id=%s", chat_id)
                 else:
                     cursor.execute(
                         "INSERT INTO user_scores (telegram_user_id, username, score) VALUES (%s, %s, %s)",
                         (chat_id, username, score)
                     )
-                    print("✅ Novo score inserido com sucesso.")
+                    logging.info("Novo score inserido com sucesso para chat_id=%s", chat_id)
 
                 conn.commit()
     except Exception as e:
-        print(f"❌ Erro ao salvar pontuação no banco para {chat_id}: {e}")
+        logging.error("Erro ao salvar pontuação no banco para chat_id=%s: %s", chat_id, e)
+
 
 def send_feedback(chat_id, score):
     if score <= 2:
