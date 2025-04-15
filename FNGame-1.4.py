@@ -73,7 +73,7 @@ def listar_temas(message):
     chat_id = message.chat.id
     try:
         with get_connection() as conn:
-            with conn.cursor() as cursor:
+            with conn.cursor(dictionary=True) as cursor:
                 cursor.execute("SELECT id, title FROM themes ORDER BY id")
                 temas = cursor.fetchall()
     except Exception as e:
@@ -187,7 +187,7 @@ def salvar_pontuacao_total(chat_id):
 
     try:
         with get_connection() as conn:
-            with conn.cursor() as cursor:
+            with conn.cursor(dictionary=True) as cursor:
                 cursor.execute("SELECT score FROM user_scores WHERE telegram_user_id = %s", (chat_id,))
                 result = cursor.fetchone()
 
@@ -291,7 +291,7 @@ def mostrar_ranking(message):
     chat_id = message.chat.id
     try:
         with get_connection() as conn:
-            with conn.cursor() as cursor:
+            with conn.cursor(dictionary=True) as cursor:
                 cursor.execute("SELECT username, score FROM user_scores ORDER BY score DESC LIMIT 5")
                 top_users = cursor.fetchall()
 
@@ -311,7 +311,7 @@ def mostrar_ranking(message):
         bot.send_message(chat_id, "⚠️ Ranking indisponível no momento. Tente novamente mais tarde.")
     try:
         with get_connection() as conn:
-            with conn.cursor() as cursor:
+            with conn.cursor(dictionary=True) as cursor:
                 cursor.execute("SELECT username, score FROM user_scores ORDER BY score DESC LIMIT 5")
                 top_users = cursor.fetchall()
                 if not top_users:
