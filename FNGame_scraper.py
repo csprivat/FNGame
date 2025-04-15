@@ -68,7 +68,7 @@ def extrair_informacoes(link):
 if __name__ == "__main__":
     theme_id = 1  # <<<< ALTERE AQUI O ID DO TEMA
     print(f"🔎 Coletando artigos do Boatos.org para o tema ID {theme_id}...")
-    links = coletar_links(limit=5)
+    links = coletar_links(limit=10)
     print(f"🔗 {len(links)} artigos encontrados.")
 
     perguntas = []
