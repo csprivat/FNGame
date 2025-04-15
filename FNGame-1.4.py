@@ -161,25 +161,38 @@ def send_question(chat_id):
 
 def salvar_pontuacao_total(chat_id):
     score = user_scores.get(chat_id, 0)
-    username = bot.get_chat(chat_id).username or "desconhecido"
+
+    try:
+        chat = bot.get_chat(chat_id)
+        username = chat.username if chat.username else "desconhecido"
+    except Exception as e:
+        print(f"❌ Erro ao obter username para chat_id {chat_id}: {e}")
+        username = "erro_username"
+
+    print(f"📥 Salvando pontuação: chat_id={chat_id}, username={username}, score={score}")
+
     try:
         with get_connection() as conn:
             with conn.cursor() as cursor:
                 cursor.execute("SELECT score FROM user_scores WHERE telegram_user_id = %s", (chat_id,))
                 result = cursor.fetchone()
+
                 if result:
                     cursor.execute(
                         "UPDATE user_scores SET score = score + %s, last_played = NOW() WHERE telegram_user_id = %s",
                         (score, chat_id)
                     )
+                    print("🔁 Score atualizado com sucesso.")
                 else:
                     cursor.execute(
                         "INSERT INTO user_scores (telegram_user_id, username, score) VALUES (%s, %s, %s)",
                         (chat_id, username, score)
                     )
+                    print("✅ Novo score inserido com sucesso.")
+
                 conn.commit()
     except Exception as e:
-        print("❌ Erro ao salvar pontuacao no banco:", e)
+        print(f"❌ Erro ao salvar pontuação no banco para {chat_id}: {e}")
 
 def send_feedback(chat_id, score):
     if score <= 2:
