@@ -3,6 +3,10 @@
 <p style="margin: 0;">📚 Projeto educativo contra a desinformação</p>
 </div>
 <br />
+
+- [Página Inicial](index.md)
+
+<br />
 # Justificativa
 
 # Por que uma plataforma como o AFNGame é urgente e necessária?
