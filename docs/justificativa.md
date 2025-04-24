@@ -4,7 +4,11 @@
 </div>
 <br />
 
+<<<<<<< HEAD
 - [Página Inicial](index.md)
+=======
+[Página Inicial](index.md)
+>>>>>>> dbc42091a47d6a1e0f5ef893d98472229aa9bf72
 
 <br />
 # Justificativa
@@ -31,6 +35,11 @@ Para nós, educadores e educadoras, a sala de aula precisa ser também um espaç
 Ao investir numa ferramenta como o **AFNGame**, estamos **apostando na prevenção** e **reafirmando o papel da educação como principal aliada na construção de uma internet mais segura, inclusiva e consciente**. E isso começa agora, com cada professor(a), pedagogo(a) e educador(a) que entende que **formar cidadãos críticos também é formar cidadãos digitais**.
 <br />
 <hr />
+<br />
+
+[Página Inicial](index.md)
+
+<br />
 <footer style="font-size: 0.9rem; color: #555;">
 <div style="text-align: left;">🄯 Site licenciado sob AGPLv3. Este projeto adota a filosofia <strong>Copyleft</strong>.</div>
 </footer>
