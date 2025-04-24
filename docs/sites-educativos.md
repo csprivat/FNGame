@@ -3,6 +3,10 @@
 <p style="margin: 0;">📚 Projeto educativo contra a desinformação</p>
 </div>
 <br />
+
+[Página Inicial](index.md)
+
+<br />
 # Sites Educativos
 
 # 🌐 Sites brasileiros que educam sobre fake news e uso consciente da internet
@@ -53,6 +57,10 @@ Organização de pesquisa que aborda temas como **liberdade de expressão, fake 
 Portal educacional que oferece conteúdos didáticos e práticas pedagógicas aplicáveis à sala de aula, com seções voltadas ao enfrentamento das fake news.
 
 > **Aplicação imediata:** Acesse planos de aula prontos e adaptáveis ao seu contexto escolar.
+<br />
+
+[Página Inicial](index.md)
+
 <br />
 <hr />
 <footer style="font-size: 0.9rem; color: #555;">
