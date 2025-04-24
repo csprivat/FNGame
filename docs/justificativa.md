@@ -4,7 +4,7 @@
 </div>
 <br />
 
-###[Página Inicial](index.md)
+[Página Inicial](index.md)
 
 <br />
 # Justificativa
@@ -33,7 +33,7 @@ Ao investir numa ferramenta como o **AFNGame**, estamos **apostando na prevenç�
 <hr />
 <br />
 
-###[Página Inicial](index.md)
+[Página Inicial](index.md)
 
 <br />
 <footer style="font-size: 0.9rem; color: #555;">
