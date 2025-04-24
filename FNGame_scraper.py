@@ -25,7 +25,7 @@ DB_CONFIG = {
     'database': os.getenv("DB_NAME"),
 }
 
-BASE_URL = 'https://www.boatos.org/'
+BASE_URL = 'https://www.boatos.org/brasil'
 
 MAPEAMENTO_CATEGORIA_THEME_ID = {
     "Política": 2,
@@ -35,7 +35,7 @@ MAPEAMENTO_CATEGORIA_THEME_ID = {
     "Meio Ambiente": 4,
 }
 
-def coletar_links(limit=10):
+def coletar_links(limit=30):
     response = requests.get(BASE_URL)
     if response.status_code != 200:
         print("❌ Erro ao acessar a página principal:", response.status_code)
@@ -66,7 +66,7 @@ def extrair_informacoes(link):
 
 if __name__ == "__main__":
     print("🔎 Coletando artigos do Boatos.org...")
-    links = coletar_links(limit=10)
+    links = coletar_links(limit=30)
     print(f"🔗 {len(links)} artigos encontrados.")
 
     perguntas = []
